@@ -15,7 +15,7 @@ _start:
   sar rax, cl ; 60 / 4 = 15 shift -> 0x8877665544332211
   and rax, 0xf ; 0x1
 
-  lea rsi, [codes + rax] ; codes refer lead addr and rax is shifted from lead adder -> rsi ->'s1'
+  lea rsi, [codes + rax] ; codes refer lead addr and rax is shifted from lead adder -> rsi ->'1'
   mov rax, 1 ; system call 1
   push rcx
   syscall
