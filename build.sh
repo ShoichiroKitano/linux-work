@@ -1,1 +1,1 @@
-docker build -t nasm --rm .
+docker build -t linux-work --rm .
